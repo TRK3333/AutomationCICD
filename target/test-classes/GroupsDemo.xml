@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Groups Suite">
+	<test name="Gropus Test">
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="sanity"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.rk.testng.groups.GroupsTest1"/>
+			<class name="com.rk.testng.groups.GroupsTest2"/>
+		</classes>
+	</test>
+</suite>
